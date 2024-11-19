@@ -1,0 +1,36 @@
+Este es un juego educativo basado en la clasificación de los residuos. 
+-----------------------------------------------------------------------
+
+Creado por:
+Juan David Baena
+Jerson David Ballesteros
+Adriana Mejía
+Para Introducción a la Ingeniería de sistemas 
+Universidad del Quindío
+©2024
+
+------------------------------------------------------------------------
+                           INSTRUCCIONES DE USO
+------------------------------------------------------------------------
+
+1. Para ejecutar el juego, De doble click sobre el archivo "juego.html"
+ASEGURESE DE ABRIRLO EN GOOGLE CRHOME (NAVEGADOR PROBADO).
+
+2. Una vez en la interfaz del juego, hay un contador de tiempo que se 
+inicia de forma automática al tocar el primer elemnto de basura.
+
+3. el objetivo es deslizar cada residuo a su caneca color correcto, si 
+el usuario e equivoca el juego le indicará que tipo de residuo es y 
+donde debería ir.
+
+4.Por cada elemento clasificado correctamente, el contador de puntuación
+aumentará un punto, y por cada error disminuirá uno.
+
+5. el Juego termina al acabar los 60 segundos, se ganará si la cantidad
+de puntos acumulados es mayor al 60% de aciertos de los residuos y se 
+perderá si es menor o igual a 60% de aciertos.
+
+6. Para reiniciar el juego sólo se deberá actualizar la página web.
+
+------------------------------------------------------------------------
+

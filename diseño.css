@@ -1,0 +1,113 @@
+/* Configuración de la página */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Contenedor principal del juego */
+#juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Temporizador */
+#temporizador {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de las canecas */
+#canecas {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilo de cada caneca */
+.caneca {
+  width: 150px;
+  height: 120px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Estilo del residuo (basura) */
+/* Estilo del contenedor de la basura */
+#basura {
+  display: inline-block;
+  background-color: #f8f9fa; /* Color de fondo neutro */
+  color: #333; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: bold;
+  padding: 0.5rem 1.5rem; /* Espaciado interno para un contenedor alargado */
+  border: 2px solid #6c757d; /* Borde para resaltar */
+  border-radius: 50px; /* Forma ovalada */
+  text-align: center; /* Alinear texto al centro */
+  white-space: nowrap; /* Prevenir que el texto se divida en varias líneas */
+  margin: 1rem auto; /* Espaciado externo */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+  transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+/* Cambiar el color al arrastrar */
+#basura:active {
+  background-color: #e9ecef;
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+}
+
+/* Botón de reinicio */
+#reinicio {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reinicio:hover {
+  background-color: #0056b3;
+}
+
+/* Animación de globos */
+.globos {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.globo {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  animation: flotar 4s infinite ease-in;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
